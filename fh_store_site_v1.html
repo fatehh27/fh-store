@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="az">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>F&H STORE — Avtomobil aksesuarları</title>
+<meta name="description" content="F&H STORE — avtomobil aksesuarları və rahat WhatsApp sifarişi.">
+<style>
+:root{--bg:#171918;--panel:#202321;--panel2:#262a27;--text:#f1f1eb;--muted:#aeb4ad;--gold:#c7a45a;--gold2:#dfc27d;--line:#363b36;--green:#1f9d67}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;line-height:1.5}
+a{color:inherit;text-decoration:none}button,input,textarea{font:inherit}
+header{position:sticky;top:0;z-index:5;background:rgba(23,25,24,.96);border-bottom:1px solid var(--line);backdrop-filter:blur(12px)}
+.nav{max-width:1100px;margin:auto;padding:14px 18px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo{font-weight:900;letter-spacing:2px;color:var(--gold2);font-size:23px}.logo small{display:block;font-size:10px;letter-spacing:5px;color:var(--muted);text-align:center;margin-top:-5px}
+nav{display:flex;gap:18px;color:var(--muted);font-size:14px}nav a:hover{color:var(--gold2)}
+.wrap{max-width:1100px;margin:auto;padding:22px 18px}
+.hero{display:grid;grid-template-columns:1.2fr .8fr;gap:20px;align-items:center;background:linear-gradient(125deg,#292d29,#1d211e);border:1px solid var(--line);border-radius:18px;padding:30px;overflow:hidden}
+.hero h1{font-size:clamp(32px,5vw,54px);line-height:1.05;margin:0 0 14px}.hero h1 span{color:var(--gold2)}.hero p{color:var(--muted);max-width:500px;margin:0 0 22px}
+.hero-art{min-height:190px;border-radius:14px;background:radial-gradient(ellipse at 50% 75%,#8a713b 0,#39382f 25%,#242925 65%);display:grid;place-items:center;color:#e2c77e;font-size:68px}
+.btn{border:0;border-radius:10px;background:var(--gold);color:#171918;font-weight:750;padding:12px 18px;cursor:pointer}.btn:hover{background:var(--gold2)}.btn.secondary{background:transparent;border:1px solid var(--gold);color:var(--gold2)}
+.section-head{display:flex;align-items:end;justify-content:space-between;margin:30px 0 14px}.section-head h2{margin:0;font-size:23px}.section-head p{margin:0;color:var(--muted);font-size:13px}
+.filters{display:flex;gap:8px;overflow:auto;padding:2px 0 12px}.chip{white-space:nowrap;background:var(--panel);border:1px solid var(--line);border-radius:30px;padding:8px 13px;color:var(--muted);cursor:pointer}.chip.active{border-color:var(--gold);color:var(--gold2)}
+.products{display:flex;flex-direction:column;gap:14px}
+.product{display:grid;grid-template-columns:190px 1fr auto;gap:18px;align-items:center;background:var(--panel);border:1px solid var(--line);border-radius:15px;padding:12px}
+.product img{width:100%;height:145px;object-fit:cover;border-radius:10px;background:#303530}
+.product h3{margin:0 0 5px;font-size:18px}.product p{margin:0;color:var(--muted);font-size:14px}.price{color:var(--gold2);font-size:20px;font-weight:800;white-space:nowrap;margin:7px 0}
+.product-actions{display:flex;flex-direction:column;gap:8px;min-width:130px}
+.empty{border:1px dashed var(--line);padding:28px;text-align:center;color:var(--muted);border-radius:14px}
+footer{border-top:1px solid var(--line);margin-top:36px;color:var(--muted);font-size:13px}.foot{max-width:1100px;margin:auto;padding:22px 18px;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+.admin-link{color:var(--gold2);cursor:pointer;text-decoration:underline}
+.modal{position:fixed;inset:0;background:#000b;z-index:20;display:none;align-items:center;justify-content:center;padding:16px}.modal.open{display:flex}.dialog{width:min(560px,100%);max-height:90vh;overflow:auto;background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:20px}.dialog h2{margin:0 0 14px}.field{display:flex;flex-direction:column;gap:6px;margin:10px 0}.field label{font-size:13px;color:var(--muted)}.field input,.field textarea{width:100%;padding:11px;border:1px solid var(--line);background:#171a18;color:var(--text);border-radius:9px}.field textarea{min-height:75px;resize:vertical}.row{display:flex;gap:9px;flex-wrap:wrap}.row>*{flex:1}.notice{font-size:13px;color:var(--muted);margin:10px 0}.admin-list{display:flex;flex-direction:column;gap:8px;margin-top:15px}.admin-item{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:10px;background:#191c1a;border-radius:9px}.danger{background:#7b3935;color:white}.whatsapp{position:fixed;right:17px;bottom:17px;background:#168b5a;color:white;border-radius:50px;padding:13px 17px;font-weight:800;box-shadow:0 5px 20px #0007;z-index:4}
+@media(max-width:700px){nav{gap:10px;font-size:12px}.hero{grid-template-columns:1fr;padding:22px}.hero-art{min-height:115px;font-size:45px}.product{grid-template-columns:105px 1fr;gap:12px}.product img{height:112px}.product-actions{grid-column:1/-1;flex-direction:row}.product-actions>*{flex:1}.section-head p{display:none}.logo{font-size:20px}}
+</style>
+</head>
+<body>
+<header><div class="nav">
+<a class="logo" href="#">F&amp;H<small>STORE</small></a>
+<nav><a href="#home">Ana səhifə</a><a href="#products">Məhsullar</a><a href="#contact">Əlaqə</a></nav>
+</div></header>
+<main class="wrap" id="home">
+<section class="hero">
+<div><h1>F&amp;H <span>STORE</span></h1><p>Avtomobil aksesuarlarında keyfiyyət, rahatlıq və zövqlü seçim. Məhsullara bax, bəyəndiyini WhatsApp-la sifariş et.</p><a class="btn" href="#products">Məhsullara bax →</a></div>
+<div class="hero-art" aria-label="Avtomobil dizayn simvolu">F&amp;H</div>
+</section>
+<div class="section-head" id="products"><div><h2>Məhsullarımız</h2><p>Seçimlərə nəzər sal</p></div><span id="count" class="notice"></span></div>
+<div class="filters" id="filters">
+<button class="chip active" data-cat="Hamısı">Hamısı</button><button class="chip" data-cat="Avtomobil aksesuarları">Avtomobil aksesuarları</button><button class="chip" data-cat="Telefon aksesuarları">Telefon aksesuarları</button><button class="chip" data-cat="İşıqlandırma">İşıqlandırma</button><button class="chip" data-cat="Digər">Digər</button>
+</div>
+<div class="products" id="productsList"><div class="empty">Məhsullar yüklənir...</div></div>
+</main>
+<footer id="contact"><div class="foot"><div><b style="color:var(--gold2)">F&amp;H STORE</b><br>Avtomobil aksesuarları</div><div>WhatsApp: <a href="https://wa.me/994708061506">+994 70 806 15 06</a></div><div>© 2026 F&amp;H STORE · <span class="admin-link" id="openAdmin">Admin panel</span></div></div></footer>
+<a class="whatsapp" href="https://wa.me/994708061506?text=Salam%2C%20F%26H%20STORE-dan%20sifaris%20etmek%20isteyirem" target="_blank" rel="noopener">WhatsApp</a>
+
+<div class="modal" id="adminModal"><div class="dialog">
+<div class="row" style="align-items:center"><h2 style="flex:1">Admin panel</h2><button class="btn secondary" id="closeAdmin">Bağla</button></div>
+<div id="loginArea">
+<p class="notice">Yalnız mağaza administratoru daxil ola bilər.</p>
+<div class="field"><label>E-poçt</label><input id="email" type="email" autocomplete="username" value="fatehh2007@gmail.com"></div>
+<div class="field"><label>Şifrə</label><input id="password" type="password" autocomplete="current-password" placeholder="Supabase hesabının şifrəsi"></div>
+<button class="btn" id="loginBtn">Daxil ol</button>
+</div>
+<div id="manageArea" hidden>
+<p class="notice" id="signedIn"></p>
+<h3>Məhsul əlavə et / dəyiş</h3>
+<input id="editId" type="hidden">
+<div class="field"><label>Məhsulun adı</label><input id="pName" placeholder="Məsələn: Telefon tutacağı"></div>
+<div class="field"><label>Açıqlama</label><textarea id="pDesc" placeholder="Məhsul haqqında qısa məlumat"></textarea></div>
+<div class="row"><div class="field"><label>Qiymət (AZN)</label><input id="pPrice" type="number" min="0" step="0.01" placeholder="15"></div><div class="field"><label>Kateqoriya</label><input id="pCategory" placeholder="Avtomobil aksesuarları"></div></div>
+<div class="field"><label>Məhsul şəkli</label><input id="pImage" type="file" accept="image/*"></div>
+<div class="row"><button class="btn" id="saveProduct">Yadda saxla</button><button class="btn secondary" id="resetForm">Təmizlə</button></div>
+<div class="admin-list" id="adminList"></div>
+<button class="btn secondary" id="logoutBtn" style="margin-top:14px">Çıxış</button>
+</div>
+<div id="status" class="notice"></div>
+</div></div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+/* Öz Supabase məlumatlarını aşağıdakı iki sətirə yerləşdir. Secret/service_role key istifadə etmə. */
+const SUPABASE_URL = "BURAYA_PROJECT_URL";
+const SUPABASE_ANON_KEY = "BURAYA_PUBLISHABLE_KEY";
+const BUCKET = "product-images";
+const TABLE = "products";
+const WHATSAPP = "994708061506";
+let supabaseClient = null, products = [], currentCategory = "Hamısı";
+
+const $ = id => document.getElementById(id);
+function setStatus(msg){$("status").textContent=msg;}
+function configured(){return SUPABASE_URL.startsWith("https://") && SUPABASE_ANON_KEY.length>20;}
+if(configured() && window.supabase) supabaseClient=window.supabase.createClient(SUPABASE_URL,SUPABASE_ANON_KEY);
+
+function safe(s){return String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));}
+function renderProducts(){
+ const list=$("productsList");
+ const shown=products.filter(p=>currentCategory==="Hamısı" || (p.category||"Digər")===currentCategory);
+ $("count").textContent=shown.length+" məhsul";
+ if(!shown.length){list.innerHTML='<div class="empty">Hələ məhsul əlavə edilməyib. Tezliklə burada yeni məhsullar olacaq.</div>';return;}
+ list.innerHTML=shown.map(p=>`<article class="product">
+ <img src="${safe(p.image_url||"")}" alt="${safe(p.name)}" onerror="this.style.visibility='hidden'">
+ <div><h3>${safe(p.name)}</h3><p>${safe(p.description||"")}</p><div class="price">${Number(p.price||0).toFixed(2)} AZN</div></div>
+ <div class="product-actions"><a class="btn" href="https://wa.me/${WHATSAPP}?text=${encodeURIComponent("Salam, "+p.name+" məhsulunu sifariş etmək istəyirəm. Qiymət: "+p.price+" AZN")}" target="_blank" rel="noopener">WhatsApp sifarişi</a></div>
+ </article>`).join("");
+}
+async function loadProducts(){
+ if(!supabaseClient){products=[];renderProducts();setStatus("Saytın Supabase bağlantısı hələ əlavə edilməyib. Aşağıdakı quraşdırma addımlarını tamamla.");return;}
+ const {data,error}=await supabaseClient.from(TABLE).select("*").order("created_at",{ascending:false});
+ if(error){$("productsList").innerHTML='<div class="empty">Məhsulları yükləmək alınmadı. Admin paneldən xəta mesajını yoxla.</div>';setStatus("Məhsul cədvəlində sütun adları və ya icazələr yoxlanmalıdır: "+error.message);return;}
+ products=data||[];renderProducts();
+}
+document.querySelectorAll(".chip").forEach(b=>b.addEventListener("click",()=>{document.querySelectorAll(".chip").forEach(x=>x.classList.remove("active"));b.classList.add("active");currentCategory=b.dataset.cat;renderProducts();}));
+$("openAdmin").onclick=()=>{$("adminModal").classList.add("open");setStatus(configured()?"":"Əvvəlcə faylda Supabase URL və Publishable key əlavə edilməlidir.");};
+$("closeAdmin").onclick=()=>$("adminModal").classList.remove("open");
+$("adminModal").addEventListener("click",e=>{if(e.target===$("adminModal"))$("adminModal").classList.remove("open");});
+$("loginBtn").onclick=async()=>{
+ if(!supabaseClient){setStatus("Supabase URL və Publishable key əlavə edilməyib.");return;}
+ setStatus("Giriş yoxlanılır...");
+ const {data,error}=await supabaseClient.auth.signInWithPassword({email:$("email").value.trim(),password:$("password").value});
+ if(error){setStatus("Giriş alınmadı: "+error.message);return;}
+ $("loginArea").hidden=true;$("manageArea").hidden=false;$("signedIn").textContent="Daxil oldun: "+(data.user.email||"admin");setStatus("Admin panel hazırdır.");renderAdmin(); 
+};
+function resetForm(){$("editId").value="";$("pName").value="";$("pDesc").value="";$("pPrice").value="";$("pCategory").value="Avtomobil aksesuarları";$("pImage").value="";}
+$("resetForm").onclick=resetForm;
+$("saveProduct").onclick=async()=>{
+ if(!supabaseClient)return;
+ const name=$("pName").value.trim(),price=Number($("pPrice").value);
+ if(!name||!Number.isFinite(price)||price<0){setStatus("Məhsul adı və düzgün qiymət daxil et.");return;}
+ setStatus("Yadda saxlanılır...");
+ let image_url=null;const file=$("pImage").files[0];
+ if(file){
+  const ext=(file.name.split(".").pop()||"jpg").toLowerCase().replace(/[^a-z0-9]/g,"");
+  const path=Date.now()+"-"+Math.random().toString(36).slice(2)+"."+ext;
+  const {error:upErr}=await supabaseClient.storage.from(BUCKET).upload(path,file,{upsert:false,contentType:file.type});
+  if(upErr){setStatus("Şəkil yüklənmədi: "+upErr.message);return;}
+  image_url=supabaseClient.storage.from(BUCKET).getPublicUrl(path).data.publicUrl;
+ }
+ const record={name,description:$("pDesc").value.trim(),price,category:$("pCategory").value.trim()||"Digər"};
+ if(image_url)record.image_url=image_url;
+ const id=$("editId").value;
+ let result=id?await supabaseClient.from(TABLE).update(record).eq("id",id):await supabaseClient.from(TABLE).insert(record);
+ if(result.error){setStatus("Məhsul yadda saxlanmadı: "+result.error.message);return;}
+ resetForm();await loadProducts();renderAdmin();setStatus("Məhsul yadda saxlanıldı.");
+};
+function renderAdmin(){
+ $("adminList").innerHTML=products.map(p=>`<div class="admin-item"><span>${safe(p.name)} · ${Number(p.price||0).toFixed(2)} AZN</span><span class="row" style="flex:0 0 auto"><button class="btn secondary" data-edit="${safe(p.id)}">Dəyiş</button><button class="btn danger" data-del="${safe(p.id)}">Sil</button></span></div>`).join("")||'<p class="notice">Hələ məhsul yoxdur.</p>';
+ $("adminList").querySelectorAll("[data-edit]").forEach(b=>b.onclick=()=>{const p=products.find(x=>String(x.id)===b.dataset.edit);if(!p)return;$("editId").value=p.id;$("pName").value=p.name||"";$("pDesc").value=p.description||"";$("pPrice").value=p.price||"";$("pCategory").value=p.category||"Digər";window.scrollTo(0,0);});
+ $("adminList").querySelectorAll("[data-del]").forEach(b=>b.onclick=async()=>{if(!confirm("Bu məhsulu silmək istəyirsən?"))return;const {error}=await supabaseClient.from(TABLE).delete().eq("id",b.dataset.del);if(error){setStatus("Silinmədi: "+error.message);return;}await loadProducts();renderAdmin();setStatus("Məhsul silindi.");});
+}
+$("logoutBtn").onclick=async()=>{await supabaseClient.auth.signOut();$("manageArea").hidden=true;$("loginArea").hidden=false;setStatus("Hesabdan çıxış edildi.");};
+loadProducts();
+</script>
+</body></html>
